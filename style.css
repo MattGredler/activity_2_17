@@ -1,0 +1,149 @@
+body{
+    
+    background-color: #3F282B;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    padding-top: 30px;
+    padding-left: 24px;
+    padding-right: 13px;
+    height: 100vh;
+    zoom: 1;
+}
+
+header{
+    font-size: 85%;
+    color: #FFFFFF;
+    padding-bottom: 5px;
+    margin-left: 7px;
+    font-weight: bold;
+    font-family: 'Montserrat';
+}
+
+main{
+    display: grid;
+    padding: 18px;
+    grid-gap: 3px;
+    grid-template-columns:  repeat(5, 1fr);
+    grid-template-rows: repeat(9, 1fr);
+    background-color: #3F282B;
+    height: 100vh;
+    color: #FFFFFF;
+    font-family: 'Montserrat';
+    padding: 6px;
+    text-justify: bottom;
+    
+    
+}
+
+.one{
+    background-color: #F03A47;
+    text-align: justify;
+    text-justify: center;
+    line-height: 75px;
+    grid-column: span 2;
+    grid-row: span 4;
+    font-weight: bold;
+    font-size: 30px;
+    padding-left: 13px;
+    padding-top: 33PX;
+    
+    
+}
+
+.three{
+    background-image: url(images/tie.png);
+    grid-column: span 5;
+    grid-row: span 2;
+    object-fit: cover;
+}
+
+.four{
+    background-image: url(images/sign.jpg);
+    grid-column: span 2;
+    grid-row: span 3;
+}
+
+.six{
+    background-image: url(images/moped.jpg);
+    grid-column: span 5;
+    grid-row: span 3;
+    object-fit: cover;
+    height: ;
+}
+
+.seven{
+    background-image: url(images/light.jpg);
+}
+
+.two, .eight{
+    grid-column: span 3;
+    grid-row: span 4;
+    background-color: #79BDAD;
+    color: white;
+    text-align: justify;
+    height: 100;
+    padding: 13px;
+}
+
+
+
+.nine{
+    background-image: url(images/sax.jpg);
+}
+
+.ten{
+    background-image: url(images/flower.jpg);
+}
+
+@media only screen and (min-width: 600px) {
+
+    main {
+        display: grid;
+        padding: 18px;
+        grid-gap: 3px;
+        grid-template-columns:  repeat(5, 1fr);
+        grid-template-rows: repeat(7, 1fr);
+        background-color: #3F282B;
+        height: 100vh;
+    }
+    
+    .one {
+     grid-column: span 1;
+     grid-row: span 2;
+     align-content: center;
+     justify-content: center;
+    }
+    
+    .two, .eight{
+        grid-column: span 1;
+        grid-row: span 3;
+    }
+    
+    .three {
+        grid-column: span 2;
+        grid-row: span 3;
+    }
+    
+    .four {
+        grid-column: span 1;
+        grid-row: span 3;
+    }
+
+    .six{
+        grid-column: span 2;
+        grid-row: span 3;
+    }
+
+    .seven{
+        grid-column: span 1;
+        grid-row: span 2;
+    }
+
+    .eight{
+        
+    }
+
+    .ten{
+        justify-content: bottom;
+    }
+}
